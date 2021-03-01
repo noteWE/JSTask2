@@ -15,27 +15,27 @@
                     <tbody id="table-body-array-string">
                         <tr class="table-row-array-string">
                             <td class="table-cell-array-string">
-                                <input type="text" id="table-input" class="table-cell-input">
+                                <input type="text" class="table-cell-input">
                             </td>
                         </tr>
                         <tr class="table-row-array-string">
                             <td class="table-cell-array-string">
-                                <input type="text" id="table-input" class="table-cell-input">
+                                <input type="text" class="table-cell-input">
                             </td>
                         </tr>
                         <tr class="table-row-array-string">
                             <td class="table-cell-array-string">
-                                <input type="text" id="table-input" class="table-cell-input">
+                                <input type="text" class="table-cell-input">
                             </td>
                         </tr>
                         <tr class="table-row-array-string">
                             <td class="table-cell-array-string">
-                                <input type="text" id="table-input" class="table-cell-input">
+                                <input type="text" class="table-cell-input">
                             </td>
                         </tr>
                         <tr class="table-row-array-string">
                             <td class="table-cell-array-string">
-                                <input type="text" id="table-input" class="table-cell-input">
+                                <input type="text" class="table-cell-input">
                             </td>
                         </tr>
                     </tbody>
@@ -51,18 +51,20 @@
                 <label class="form-label" for="frequent-char">Найти самый часто встречающийся символ в строке.</label>
                 <input class="form-input-text" type="text" name="frequent-char" id="input-frequent-char">
                 <p id="answer-frequent-char" class="form-answer">Ответ</p>
-                <input class="form-input-button" type="button" value="Найти">
+                <input class="form-input-button" type="button" value="Найти" id="button-frequent-char">
                 <label class="form-label" for="replace-char">Заменить самый часто встречающийся символ.</label>
                 <input class="form-input-text" type="text" name="replace-char" id="input-replace-char">
+                <p class="form-answer" id="answer-replace-char">Ответ</p>
                 <input class="form-input-button" type="button" value="Заменить" id="button-replace-char">
             </fieldset>
             <fieldset id="fileds-anagram-string" class="form-fileds-block">
                 <label class="form-label" for="anagram-string">Проверить являются ли строки  анаграммами.</label>
                 <div class="div-block-row">
-                    <input class="form-input-text" type="text" name="anagram-string" class="input-anagram-sting">
-                    <input class="form-input-text" type="text" name="anagram-string" class="input-anagram-sting">
+                    <input class="form-input-text input-anagram-sting" type="text" name="anagram-string">
+                    <input class="form-input-text input-anagram-sting" type="text" name="anagram-string">
                 </div>
-                <input class="form-input-button" type="button" value="Проверить">
+                <p class="form-answer" id="answer-anagram-string">Ответ</p>
+                <input class="form-input-button" type="button" value="Проверить" id="button-anagram-string">
             </fieldset>
         </form>
     </main>
