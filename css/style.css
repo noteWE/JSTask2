@@ -102,3 +102,9 @@ body {
 #table-input:focus {
     outline: none;
 }
+
+.form-answer {
+    visibility: hidden;
+    margin: 0px 0px 0px 30px;
+    font-size: 28px;
+}

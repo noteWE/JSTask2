@@ -11,44 +11,46 @@
         <form action="">
             <fieldset id="fileds-array-string" class="form-fileds-block">
                 <label class="form-label" for="array-string">Найти самую длинную строку в массиве.</label>
-                <input class="form-input-text" type="text" name="array-string" id="input-array-string">
                 <table id="table-array-string">
                     <tbody id="table-body-array-string">
                         <tr class="table-row-array-string">
                             <td class="table-cell-array-string">
-                                ...<!--<input type="text" id="table-input">-->
+                                <input type="text" id="table-input" class="table-cell-input">
                             </td>
                         </tr>
                         <tr class="table-row-array-string">
                             <td class="table-cell-array-string">
-                                ...
+                                <input type="text" id="table-input" class="table-cell-input">
                             </td>
                         </tr>
                         <tr class="table-row-array-string">
                             <td class="table-cell-array-string">
-                                ...
+                                <input type="text" id="table-input" class="table-cell-input">
                             </td>
                         </tr>
                         <tr class="table-row-array-string">
                             <td class="table-cell-array-string">
-                                ...
+                                <input type="text" id="table-input" class="table-cell-input">
                             </td>
                         </tr>
                         <tr class="table-row-array-string">
                             <td class="table-cell-array-string">
-                                ...
+                                <input type="text" id="table-input" class="table-cell-input">
                             </td>
                         </tr>
                     </tbody>
                 </table>
+                <p id="answer-array-string" class="form-answer">Ответ</p>
                 <div class="div-block-row">
-                    <input class="form-input-button" type="button" value="Ввести следующую строку">
-                    <input class="form-input-button" type="button" value="Найти">
+                    <input class="form-input-button" type="button" value="Добавить строку" id="form-input-button-add-row">
+                    <input class="form-input-button" type="button" value="Удалить строку" id="form-input-button-delete-row">
+                    <input class="form-input-button" type="button" value="Найти" id="form-input-button-apply">
                 </div>
             </fieldset>
             <fieldset id="fileds-frequent-char" class="form-fileds-block">
                 <label class="form-label" for="frequent-char">Найти самый часто встречающийся символ в строке.</label>
                 <input class="form-input-text" type="text" name="frequent-char" id="input-frequent-char">
+                <p id="answer-frequent-char" class="form-answer">Ответ</p>
                 <input class="form-input-button" type="button" value="Найти">
                 <label class="form-label" for="replace-char">Заменить самый часто встречающийся символ.</label>
                 <input class="form-input-text" type="text" name="replace-char" id="input-replace-char">
