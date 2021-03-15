@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+}
+
+#navigation {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-link {
+    height: 100%;
+    font-size: 30px;
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover {
+    background-color: rgb(228, 228, 228);
+    color: rgb(32, 32, 32);
+}
+
+.nav-link:active {
+    outline: none;
+}
+
+body {
+    background-color: rgb(45, 73, 73);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-block-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+#form-add-film {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#form-main-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    border: none;
+}
+
+#form-header {
+    background: linear-gradient(to right, rgb(133, 0, 0) 50%, rgb(204, 43, 43) 99%);
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 3%;
+}
+
+.form-label {
+    font-size: 28px;
+    padding: 10px 10px 20px 50px;
+    width: 30%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.form-input {
+    font-size: 26px;
+    margin: 50px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+#film-poster {
+    width: 350px;
+    height: 400px;
+    background-image: url(../images/filmstrip.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 3%;
+}

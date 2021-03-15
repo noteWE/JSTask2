@@ -12,22 +12,27 @@ function getStringWithMaxLen(arrayString) {
 
 function getFrequentChar(string) {
     let arr = [];
-    arr.length = 256;
-    for (let i = 0; i < 256; i++) {
-        arr[i] = 0;
-    }
+    
     for (let i = 0; i < string.length; i++) {
-        arr[string.charCodeAt(i)]++;
-    }
-    let frequentChar = null;
-    let maxFrequent = 0;
-    for (let i = 0; i < arr.length; i++){
-        if(arr[i] > maxFrequent) {
-            maxFrequent = arr[i];
-            frequentChar = i;
+        let chk = true;
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j].char == string.charAt(i)) {
+                arr[j].count++;
+                chk = false;
+            }
+        }
+        if (chk) {
+            arr.push({char: string.charAt(i), count: 0});
         }
     }
-    return String.fromCharCode(frequentChar);
+
+    let pair = {code: null, count: 0};
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].count > pair.count) {
+            pair = arr[i];
+        }
+    }
+    return pair.char;
 }
 
 function isAnagram(string1, string2) {
