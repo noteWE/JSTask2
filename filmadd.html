@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylefilm.css">
-    <title>Document</title>
+    <title>Добавить фильм</title>
 </head>
 <body>
     <nav id="navigation">
-        <a href="" class="nav-link">На главную</a>
-        <a href="" class="nav-link">Добавить фильм</a>
+        <a href="filmmain.html" class="nav-link">На главную</a>
+        <a href="filmadd.html" class="nav-link">Добавить фильм</a>
     </nav>
     <main id="main">
         <h1 id="form-header">Введите информацию о вашем фильме</h1>
@@ -33,7 +33,7 @@
                     <input class="form-input" type="text" name="film-director" id="input-film-director">
                 </div>
                 <div class="div-block-row">
-                    <label class="form-label" for="film-scripts">Введите тех, кто работал на сценарием:</label>
+                    <label class="form-label" for="film-scripts">Введите тех, кто работал над сценарием:</label>
                     <input class="form-input" type="text" name="film-scripts" id="input-film-scripts">
                 </div>
                 <div class="div-block-row">
@@ -73,9 +73,11 @@
                     <!--<input class="form-input" type="file" name="film-poster" id="file-film-poster">-->
                     <input class="form-input" type="text" name="film-poster" id="input-url-film-poster">
                 </div>
-                <input type="button" value="Добавить фильм в библиотеку.">
+                <input id="form-button-add" type="button" value="Добавить фильм в библиотеку.">
             </fieldset>
         </form>
+        <script src="script/modules/film.js"></script>
+        <script src="script/scriptfilm.js"></script>
     </main>
 </body>
 </html>
