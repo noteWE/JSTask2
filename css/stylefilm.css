@@ -46,18 +46,26 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.div-block-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 #main {
     width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
+    min-height: 100vh;
 }
 
 #form-add-film {
@@ -79,13 +87,6 @@ body {
 
 #form-header {
     background: linear-gradient(to right, rgb(133, 0, 0) 50%, rgb(204, 43, 43) 99%);
-    width: 100%;
-    padding-top: 3%;
-    padding-bottom: 1%;
-    padding-left: 10%;
-    color: white;
-    font-size: 40px;
-    margin-bottom: 3%;
 }
 
 .form-label {
@@ -95,8 +96,6 @@ body {
     text-align: left;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
 }
 
 .form-input {
@@ -106,22 +105,184 @@ body {
     border-bottom: 2px solid black;
 }
 
+.form-select {
+    font-size: 26px;
+    margin: 50px;
+    width: 15%;
+}
+
+.form-input-date {
+    font-size: 26px;
+    margin: 50px;
+    width: 15%;
+    height: 50px;
+}
+
 .form-input:focus {
     outline: none;
 }
 
-#film-poster {
+#film-poster-tmp {
+    min-width: 350px;
     width: 350px;
     height: 400px;
     background-image: url(../images/filmstrip.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    margin-left: 3%;
+    margin-right: 3%;
 }
 
 #form-button-add {
     width: 40%;
     font-size: 26px;
     margin: 20px;
+    align-self: flex-start;
+}
+
+.header {
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+}
+
+#main-header {
+    background: linear-gradient(to right, rgb(70, 10, 78) 50%, rgb(124, 11, 90) 99%);
+}
+
+.check-box-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: self-end;
+    align-items: center;
+    width: 100%;
+}
+
+.checkbox-film-genres {
+    margin: 5px;
+}
+
+.check-box-value {
+    font-size: 26px;
+    margin-right: 50px;
+    padding-left: 20px;
+}
+
+#div-films-list {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.film-card {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 250px;
+}
+
+.film-card-title {
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+}
+
+.film-card-img {
+    width: 250px;
+    height: 375px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /*background-image: url(https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/ffa0729b-8587-47e8-b4de-3f8a2c61e218/300x450);*/
+    background-size: 100%;
+    background-position: center;
+}
+
+.film-card-img-act {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.film-card-img-act:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.film-card-img-over {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.356), rgb(33, 33, 54));
+    opacity: 0;
+}
+
+#about-film {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.film-attribute-key {
+    margin-right: 50px;
+    width: 40%;
+}
+
+.film-attribute-value {
+    text-align: left;
+    font-size: 24px;
+}
+
+#film-attributes {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.film-attribute {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    width: 100%;
+    font-size: 28px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+}
+
+#about-header {
+    background: linear-gradient(to right, rgb(0, 0, 77) 50%, rgb(0, 0, 197) 99%);
+}
+
+#film-poster {
+    min-width: 350px;
+    width: 350px;
+    height: 525px;
+    background-color: gray;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 3%;
+}
+
+.message-warning {
+    color: red;
+    font-size: 30px;
 }

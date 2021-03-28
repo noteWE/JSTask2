@@ -12,72 +12,183 @@
         <a href="filmadd.html" class="nav-link">Добавить фильм</a>
     </nav>
     <main id="main">
-        <h1 id="form-header">Введите информацию о вашем фильме</h1>
+        <h1 id="form-header" class="header">Введите информацию о вашем фильме</h1>
         <form action="" id="form-add-film">
-            <div id="film-poster"></div>
             <fieldset id="form-main-fields">
                 <div class="div-block-row">
                     <label class="form-label" for="film-title">Введите название фильма:</label>
-                    <input class="form-input" type="text" name="film-title" id="input-film-title">
+                    <input class="form-fields form-input" type="text" name="film-title" id="input-film-title">
                 </div>
                 <div class="div-block-row">
                     <label class="form-label" for="film-country">Введите страну фильма:</label>
-                    <input class="form-input" type="text" name="film-country" id="input-film-country">
+                    <input class="form-fields form-input" type="text" name="film-country" id="input-film-country">
                 </div>
                 <div class="div-block-row">
-                    <label class="form-label" for="film-genre">Выберите жанр фильма</label>
-                    <input class="form-input" type="text" name="film-genre" id="input-film-genre">
+                    <label class="form-label" for="film-genre">Отметьте жанры фильма: </label>
+                    <div class="div-block-list check-box-list form-fields">
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">биографический</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">боевик</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">вестерн</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">военный</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">детектив</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">детский</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">документальный</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">драма</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">исторический</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">комедия</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">короткометражный</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">криминал</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">мелодрама</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">мистика</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">мультфильм</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">мюзикл</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">научный</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">нуар</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">приключения</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">реалити-шоу</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">семейный</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">спорт</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">триллер</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">ужасы</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">фантастика</span>
+                        </div>
+                        <div class="check-box-block">
+                            <input type="checkbox" name="film-genre" class="checkbox-film-genres">
+                            <span class="check-box-value">фэнтези</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="div-block-row">
                     <label class="form-label" for="film-director">Введите режиссера(ов) фильма:</label>
-                    <input class="form-input" type="text" name="film-director" id="input-film-director">
+                    <input class="form-fields form-input" type="text" name="film-director" id="input-film-director">
                 </div>
                 <div class="div-block-row">
                     <label class="form-label" for="film-scripts">Введите тех, кто работал над сценарием:</label>
-                    <input class="form-input" type="text" name="film-scripts" id="input-film-scripts">
+                    <input class="form-fields form-input" type="text" name="film-scripts" id="input-film-scripts">
                 </div>
                 <div class="div-block-row">
                     <label class="form-label" for="film-producer">Введите продюсера фильма:</label>
-                    <input class="form-input" type="text" name="film-producer" id="input-film-producer">
+                    <input class="form-fields form-input" type="text" name="film-producer" id="input-film-producer">
                 </div>
                 <div class="div-block-row">
                     <label class="form-label" for="film-operator">Введите оператора фильма:</label>
-                    <input class="form-input" type="text" name="film-operator" id="input-film-operator">
+                    <input class="form-fields form-input" type="text" name="film-operator" id="input-film-operator">
                 </div>
                 <div class="div-block-row">
                     <label class="form-label" for="film-compositor">Введите композитора фильма:</label>
-                    <input class="form-input" type="text" name="film-compositor" id="input-film-compositor">
+                    <input class="form-fields form-input" type="text" name="film-compositor" id="input-film-compositor">
                 </div>
                 <div class="div-block-row">
                     <label class="form-label" for="film-budget">Введите бюджет фильма:</label>
-                    <input class="form-input" type="text" name="film-budget" id="input-film-budget">
+                    <input class="form-fields form-input" type="text" name="film-budget" id="input-film-budget">
                 </div>
                 <div class="div-block-row">
                     <label class="form-label" for="film-box-office">Введите сумму кассовых сборов:</label>
-                    <input class="form-input" type="text" name="film-box-office" id="input-film-box-office">
+                    <input class="form-fields form-input" type="text" name="film-box-office" id="input-film-box-office">
                 </div>
                 <div class="div-block-row">
                     <label class="form-label" for="film-age-rate">Выберите возрастной рейтинг:</label>
-                    <input class="form-input" type="text" name="film-age-rate" id="input-film-age-rate">
+                    <select class="form-fields form-fields form-select" name="film-age-rate" id="select-film-age-rate">
+                        <option value="0">0+</option>
+                        <option value="6">6+</option>
+                        <option value="12">12+</option>
+                        <option value="16">16+</option>
+                        <option value="18">18+</option>
+                    </select>
                 </div>
                 <div class="div-block-row">
                     <label class="form-label" for="film-duration">Введите продолжительность фильма:</label>
-                    <input class="form-input" type="text" name="film-duration" id="input-film-duration">
+                    <input class="form-fields form-input" type="text" name="film-duration" id="input-film-duration">
                 </div>
                 <div class="div-block-row">
                     <label class="form-label" for="film-date">Введите дату премьеры фильма:</label>
-                    <input class="form-input" type="text" name="film-date" id="input-film-date">
+                    <input class="form-fields form-input-date" type="date" name="film-date" id="input-film-date">
                 </div>
                 <div class="div-block-row">
                     <label class="form-label" for="film-poster">Введите url или загрузите изображение постера фильма:</label>
                     <!--<input class="form-input" type="file" name="film-poster" id="file-film-poster">-->
-                    <input class="form-input" type="text" name="film-poster" id="input-url-film-poster">
+                    <input class="form-fields form-input" type="text" name="film-poster" id="input-url-film-poster">
                 </div>
                 <input id="form-button-add" type="button" value="Добавить фильм в библиотеку.">
             </fieldset>
+            <div id="film-poster-tmp"></div>
         </form>
         <script src="script/modules/film.js"></script>
-        <script src="script/scriptfilm.js"></script>
+        <script src="script/scriptfilmadd.js"></script>
     </main>
 </body>
 </html>
