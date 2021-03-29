@@ -115,6 +115,7 @@ body {
     font-size: 26px;
     margin: 50px;
     width: 15%;
+    min-width: fit-content;
     height: 50px;
 }
 

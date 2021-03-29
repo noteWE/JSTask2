@@ -13,17 +13,61 @@
     </nav>
     <main id="main">
         <h1 id="main-header" class="header">Мои фильмы</h1>
-        <div id="div-films-list">
-            <!--<div class="film-card">
-                <div class="film-card-img">
-                    <div class="film-card-img-over">
-                        <p class="film-card-img-act" id="film-card-img-link">Перейти</p>
-                        <p class="film-card-img-act" id="film-card-img-delete">Убрать</p>
+        <form action="">
+            <fieldset>
+                <h3>Сортировка по:</h3>
+                <label for="order-sort">Обратный порядок</label>
+                <input type="checkbox" name="order-sort" id="">
+                <label for="genres">Выберите жанры:</label>
+                <select name="genres" id="" multiple="true">
+                    <option value="биографический">биографический</option>
+                    <option value="боевик">боевик</option>
+                    <option value="вестерн">вестерн</option>
+                    <option value="военный">военный</option>
+                    <option value="детектив">детектив</option>
+                    <option value="документальный">документальный</option>
+                    <option value="драма">драма</option>
+                    <option value="исторический">исторический</option>
+                    <option value="комедия">комедия</option>
+                    <option value="короткометражный">короткометражный</option>
+                    <option value="криминал">криминал</option>
+                    <option value="мелодрама">мелодрама</option>
+                    <option value="мистика">мистика</option>
+                    <option value="мультфильм">мультфильм</option>
+                    <option value="мюзикл">мюзикл</option>
+                    <option value="научный">научный</option>
+                    <option value="нуар">нуар</option>
+                    <option value="приключения">приключения</option>
+                    <option value="реалити-шоу">реалити-шоу</option>
+                    <option value="семейный">семейный</option>
+                    <option value="спорт">спорт</option>
+                    <option value="триллер">триллер</option>
+                    <option value="ужасы">ужасы</option>
+                    <option value="фантастика">фантастика</option>
+                    <option value="фэнтези">фэнтези</option>
+                </select>
+                <label for="countries">Выберите страны</label>
+                <select name="countries" id="" multiple="true">
+                    <option value="США">США</option>
+                    <option value="Россия">Россия</option>
+                    <option value="Канада">Канада</option>
+                    <option value="Франция">Франция</option>
+                    <option value="Германия">Германия</option>
+                    <option value="Великобритания">Великобритания</option>
+                </select>
+            </fieldset>
+            <div id="div-films-list">
+                <!--<div class="film-card">
+                    <div class="film-card-img">
+                        <div class="film-card-img-over">
+                            <p class="film-card-img-act" id="film-card-img-link">Перейти</p>
+                            <p class="film-card-img-act" id="film-card-img-delete">Убрать</p>
+                        </div>
                     </div>
-                </div>
-                <p class="film-card-title">Бегущий по лезвию</p>
-            </div>-->
-        </div>
+                    <p class="film-card-title">Бегущий по лезвию</p>
+                </div>-->
+            </div>
+        </form>
     </main>
     <script src="script/modules/film.js"></script>
     <script src="script/scriptfilmmain.js"></script>
