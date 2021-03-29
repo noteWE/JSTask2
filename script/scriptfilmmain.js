@@ -1,4 +1,11 @@
 function initPage() {
+    let selYears = document.getElementById("sorting-select-years");
+    for (let i = 1800; i < (new Date()).getFullYear(); i++) {
+        let opt = document.createElement("option");
+        opt.value = i;
+        opt.innerHTML = i;
+        selYears.appendChild(opt);
+    }
     let tmp = localStorage.getItem("setFilms");
     let setFilm;
     console.log(tmp);
