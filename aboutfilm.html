@@ -90,7 +90,20 @@
             </div>
             <div id="film-poster"></div>
         </div>
+        <form id="form-comment">
+            <h3 id="form-fieldset-header">Оставить отзыв</h3>
+            <div id="form-comment-block">
+                <label class="form-label" for="username">Введите ваш ник: </label>
+                <input required class="form-input" id="comment-input-username" type="text" name="username">
+                <label class="form-label" for="comment">Введите текст отзыва: </label>
+                <textarea required class="form-text" id="comment-input-text" name="comment" id="" cols="120" rows="10"></textarea>
+            </div>
+            <p id="comment-warning" class="message-warning">Вы не ввели имя или текст отзыва!</p>
+            <input id="form-button-add-comment" type="button" value="Добавить">
+            <input id="form-button-view-comments" type="button" value="Посмотреть остальные отзывы">
+        </form>
     </main>
+    <script src="script/modules/comment.js"></script>
     <script src="script/modules/film.js"></script>
     <script src="script/scriptaboutfilm.js"></script>
 </body>

@@ -134,7 +134,7 @@ body {
     margin-right: 3%;
 }
 
-#form-button-add, #form-button-filter {
+#form-button-add, #form-button-filter, #form-button-add-comment, #form-button-view-comments {
     width: 40%;
     font-size: 24px;
     margin: 20px;
@@ -181,6 +181,7 @@ body {
     flex-wrap: wrap;
     justify-content:flex-start;
     align-items: flex-start;
+    align-self: center;
 }
 
 .film-card {
@@ -274,7 +275,7 @@ body {
     border-bottom: 2px solid black;
 }
 
-#about-header {
+#about-header, #comments-header {
     background: linear-gradient(to right, rgb(0, 0, 77) 50%, rgb(0, 0, 197) 99%);
 }
 
@@ -295,6 +296,7 @@ body {
 }
 
 #form-film-filters {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -307,6 +309,7 @@ body {
 
 #fieldset-filters {
     border: none;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 70px;
@@ -319,4 +322,69 @@ body {
     min-width: 20%;
     padding: 10px;
     box-sizing: border-box;
+}
+
+#form-comment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#form-comment-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-text {
+    font-size: 26px;
+    margin: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 80%;
+    border: 1px solid black;
+    resize: none;
+}
+
+.form-text:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+#comment-warning {
+    visibility: hidden;
+}
+
+#comments-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.comment {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+.comment-username {
+    width: 100%;
+    font-size: 30px;
+    background-color: gray;
+    color: white;
+}
+
+
+.comment-text {
+    width: 100%;
+    font-size: 25px;
+    min-height: 70px;
 }
